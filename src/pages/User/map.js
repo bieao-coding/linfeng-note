@@ -1,0 +1,35 @@
+import React from 'react';
+import { Icon } from 'antd';
+import styles from './Login.less';
+
+export default {
+  loginName: {
+    props: {
+      size: 'large',
+      id: 'userName',
+      prefix: <Icon type="user" className={styles.prefixIcon} />,
+      placeholder: '登录名',
+    },
+    rules: [
+      {
+        required: true,
+        message: '请输入登录名',
+      },
+    ],
+  },
+  Password: {
+    props: {
+      size: 'large',
+      prefix: <Icon type="lock" className={styles.prefixIcon} />,
+      type: 'password',
+      id: 'password',
+      placeholder: '密码',
+    },
+    rules: [
+      {
+        required: true,
+        message: '请输入密码',
+      },
+    ],
+  }
+};

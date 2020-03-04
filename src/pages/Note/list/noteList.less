@@ -1,0 +1,34 @@
+.note {
+  overflow: auto;
+  .noData{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .title {
+    background-color: #1890FF;
+    color: white;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  table {
+    width:100%;
+    background-color: #f0f2f5;
+    border: 1px solid #e8e8e8;
+    border-top:none;
+    td{
+      padding:12px 8px;
+    }
+    td:not(:last-child){
+      border-right: 1px solid #e8e8e8;
+    }
+    tr:not(:last-child){
+      border-bottom: 1px solid #e8e8e8;
+    }
+    tr:hover{
+      background-color: #e6f7ff;
+      cursor: pointer;
+    }
+  }
+}

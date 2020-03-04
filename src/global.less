@@ -1,0 +1,149 @@
+@import '~antd/lib/style/themes/default.less';
+@import '//at.alicdn.com/t/font_939559_odnos5ba17.css';
+// 常用值
+@px-5: 5px !important;
+@px-10: 10px !important;
+@px-20: 20px !important;
+@px-64: 64px !important;
+@px-0: 0;
+@online:#1890ff;
+@offline:#e6e6e6;
+@viewBg:#141e27;
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+//改写全局样式
+:global{
+  body{
+    //min-width: 768px;
+    .ant-layout-content{
+      margin: 20px;
+    }
+    .ant-card{
+      .ant-card-body{
+        height: 100%;
+        padding: 20px;
+      }
+    }
+    .ant-pagination{ // 分页
+      .ant-pagination-options{
+        .ant-select{
+          margin-right: @px-0;
+        }
+      }
+    }
+  }
+}
+// 通用样式
+.m-t-5{margin-top: @px-5};
+.m-r-5{margin-right: @px-5};
+.m-b-5{margin-bottom: @px-5};
+.m-l-5{margin-left: @px-5};
+
+.m-t-10{margin-top: @px-10};
+.m-r-10{margin-right: @px-10};
+.m-b-10{margin-bottom: @px-10};
+.m-l-10{margin-left: @px-10};
+
+.m-t-20{margin-top: @px-20};
+.m-r-20{margin-right: @px-20};
+.m-b-20{margin-bottom: @px-20};
+.m-l-20{margin-left: @px-20};
+
+.p-t-10{padding-top: @px-10};
+.p-r-10{padding-right: @px-10};
+.p-l-10{padding-left: @px-10};
+.p-b-10{padding-bottom: @px-10};
+
+.p-t-20{padding-top: @px-20};
+.p-r-20{padding-right: @px-20};
+.p-l-20{padding-left: @px-20};
+.p-b-20{padding-bottom: @px-20};
+
+.all-height{height:100% !important;};
+.text-center{text-align: center};
+.text-right{text-align: right};
+
+//公共用色
+.online-color{ color: @online};
+.offline-color{ color: @offline};
+.success-color{ color: @success-color};
+.default-color{ color: @error-color};
+.viewBg-color{background-color: @viewBg;color:#fff}
+//通用样式
+.border-none{border:none};
+.auto-overflow{overflow: auto};
+
+//图片尺寸
+.image-64{
+  width: @px-64;
+  height: @px-64
+};
+//显示与隐藏
+.hide{display: none !important;};
+.show{display: block !important;};
+.showFlex{display: flex !important;};
+//提示消息通用样式
+.title-style{
+  color: #b7b30e;
+  font-weight: 600;
+}
+//flex
+.flex{display: flex !important;};
+.flex-column{flex-direction: column !important;};
+.align-end{align-items: flex-end}
+.row-end{justify-content: flex-end}
+.align-center{align-items: center}
+.auto-flex{flex:auto};
+.flex1{flex:1}
+.flex2{flex:2}
+.flex3{flex:3}
+.overflow-hidden{overflow: hidden}
+.space-between{justify-content: space-between}
+
+//标题的统一样式
+.title {
+  font-size: 20px;
+  color: @heading-color;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+};
+// 编辑表格的样式
+.edit-table{
+  .ant-form-explain {
+    position: absolute;
+    font-size: 12px;
+    margin-top: -4px;
+  }
+}
